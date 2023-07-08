@@ -127,6 +127,7 @@ rm -rf u.txt
       
   }
   Manjur.CagWEti(){
+  # example Bearer IGT:2:eyJkc191c2VyX2lkIjoiMjI5NTI0NzE2MzEiLCJzZXNzaW9uaWQiOiIyMjk1MjQ3MTYzMSUzQTR3VGF0ajBRSUxFRGw2JTNBMTklM0FBWWZlZm9WVDJnVXVHRVNzNHNTSHZjckpfbkRvREh4Y3RUSkd2NGhhZ3cifQ==
       curl -s -k -X $'POST' \
     -H $'Host: i.instagram.com' \
     -H $'X-Ig-App-Locale: in_ID' \
@@ -134,7 +135,7 @@ rm -rf u.txt
     -H $'X-Ig-Mapped-Locale: id_ID' \
     -H $'User-Agent: Instagram 265.0.0.19.301 Android (28/9; 240dpi; 720x1280; OnePlus; ONEPLUS A5000; OnePlus5; qcom; en_US)' \
     -H $'Accept-Language: id-ID' \
-    -H $'Authorization: Bearer IGT:2:eyJkc191c2VyX2lkIjoiMjI5NTI0NzE2MzEiLCJzZXNzaW9uaWQiOiIyMjk1MjQ3MTYzMSUzQTR3VGF0ajBRSUxFRGw2JTNBMTklM0FBWWZlZm9WVDJnVXVHRVNzNHNTSHZjckpfbkRvREh4Y3RUSkd2NGhhZ3cifQ=='  \
+    -H $'Authorization: '  \
      --data-urlencode "enc_old_password=#PWD_INSTAGRAM_BROWSER:0:$(this height):${psss}" \
      --data-urlencode "enc_new_password1=#PWD_INSTAGRAM_BROWSER:0:$(this height):jfeofijeoifjewfjj" \
      --data-urlencode "enc_new_password2=#PWD_INSTAGRAM_BROWSER:0:$(this height):jfeofijeoifjewfjj" \
@@ -142,8 +143,7 @@ rm -rf u.txt
   }
   Manjur.getUs(){
     touch u.txt
-  #-H 'cookie: ig_nrcb=1; mid=ZA2B_QALAAFyynP9oCStkhDfTFjY; ig_did=27F99E6C-84F5-44A7-9E3C-EA28F648FF04; datr=-oENZA1h_5v8n1aBNhdI1kJ4; fbm_124024574287414=base_domain=.instagram.com; shbid="5753\05444132215454\0541715506403:01f7d82fc7e44dec43484dd15738d46a5187431c913322890951756ce1080903c3f31e26"; shbts="1683970403\05444132215454\0541715506403:01f787281e4175d2785f0f4040cfd6b2811bd9498a3c268e3bd5eee63c7a25b92f374dfa"; csrftoken=97Xtlxdq1edtdqBib2BSD2ea3lXsV2dg; ds_user_id=44132215454; sessionid=44132215454%3AmMv6ItMKhgfxoq%3A7%3AAYdKWyvreA51iwVRjXNaJYLeSKVlcsnyi7qNQcDFng; fbsr_124024574287414=qBTha-WtSWHd_7onNBwbJ7aos-WS4v3fBUMJiKZ0uT4.eyJ1c2VyX2lkIjoiMTAwMDEyODcwNjQ2ODkxIiwiY29kZSI6IkFRQWJUVTZEcWN6NWU3LTVjTUt1RG5rVFp1RmpNMG1PSjBwRXJIaFVaWnJNSW5UWUlPaTd3aWpUazFBRHp2WHgyajdOckNqWF9Gcm9nY211N2N2N3JoWGkxdlMtQ24ta21RR09uX1pFRHRVbzBUSkFnTGxycDJROHdTRUZwLWljbGVIaHJOb0ktSWFucE9SSHZ1eGk4WmZ6U1NsQkZ5bldEN1Zqd1pId0o5ZkpnQTB4YTU2MHFsQzJMalA2Sk1HMW02Y1kzTkFKeU9vV1ZZTU9nSmMyYnF1eTdWWHlxZE9TVF9zdGlsQ2VoUFVvWGdGbHdwRHNFOUdiajNxMEhvRHF0SUlvUnczdFlvWE5mYmZtb3JSeE5qUzFQUnpGMnk3bFRScHJsc215WVcwNlk4X05LNWQtZzFHdWYtVkJWYlQxSWZxWG81X3VUbEJYWnpzWXVEWHk2dDc0Iiwib2F1dGhfdG9rZW4iOiJFQUFCd3pMaXhuallCQURMMlpBeWF6bFBxYjBRWkJaQzE4MDhvSHBaQ1pBWWs4SjhCWkE3WENRMTRtdG9MejB6Q21tU1dKZkNXaFgwVFJpVHVhcmhpZHNPOVlKWU9FYUVHbXJHV1h4bUdWREhjOWdtbDRaQ24wYUxvOTBuWWlmWFpCcEJDU3NMZ2UxWU5BWkJFMThFT1ZMc3UyTGRQZjJaQXdzZFpBSHhFMVpDWkN5RlNCSmNWc1B4RVpBV1c2Z1dNR2lXTFQ0OG84WkQiLCJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTY4NDA2MDkyN30; fbsr_124024574287414=qBTha-WtSWHd_7onNBwbJ7aos-WS4v3fBUMJiKZ0uT4.eyJ1c2VyX2lkIjoiMTAwMDEyODcwNjQ2ODkxIiwiY29kZSI6IkFRQWJUVTZEcWN6NWU3LTVjTUt1RG5rVFp1RmpNMG1PSjBwRXJIaFVaWnJNSW5UWUlPaTd3aWpUazFBRHp2WHgyajdOckNqWF9Gcm9nY211N2N2N3JoWGkxdlMtQ24ta21RR09uX1pFRHRVbzBUSkFnTGxycDJROHdTRUZwLWljbGVIaHJOb0ktSWFucE9SSHZ1eGk4WmZ6U1NsQkZ5bldEN1Zqd1pId0o5ZkpnQTB4YTU2MHFsQzJMalA2Sk1HMW02Y1kzTkFKeU9vV1ZZTU9nSmMyYnF1eTdWWHlxZE9TVF9zdGlsQ2VoUFVvWGdGbHdwRHNFOUdiajNxMEhvRHF0SUlvUnczdFlvWE5mYmZtb3JSeE5qUzFQUnpGMnk3bFRScHJsc215WVcwNlk4X05LNWQtZzFHdWYtVkJWYlQxSWZxWG81X3VUbEJYWnpzWXVEWHk2dDc0Iiwib2F1dGhfdG9rZW4iOiJFQUFCd3pMaXhuallCQURMMlpBeWF6bFBxYjBRWkJaQzE4MDhvSHBaQ1pBWWs4SjhCWkE3WENRMTRtdG9MejB6Q21tU1dKZkNXaFgwVFJpVHVhcmhpZHNPOVlKWU9FYUVHbXJHV1h4bUdWREhjOWdtbDRaQ24wYUxvOTBuWWlmWFpCcEJDU3NMZ2UxWU5BWkJFMThFT1ZMc3UyTGRQZjJaQXdzZFpBSHhFMVpDWkN5RlNCSmNWc1B4RVpBV1c2Z1dNR2lXTFQ0OG84WkQiLCJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTY4NDA2MDkyN30; rur="EAG\05444132215454\0541715597357:01f74e05bb9b2e28f6b746d67fcd9531779433dfda9ba27ddc4f3787ffbfe7004489e718"' \
-     curl -s -X GET "https://www.instagram.com/api/v1/web/search/topsearch/?context=blended&query=${lolllz}&include_reel=true&search_surface=web_top_search" \
+   curl -s -X GET "https://www.instagram.com/api/v1/web/search/topsearch/?context=blended&query=${lolllz}&include_reel=true&search_surface=web_top_search" \
   -H 'authority: www.instagram.com' \
   -H 'accept: */*' \
   -H 'accept-language: id,en;q=0.9' \
