@@ -24,10 +24,11 @@ class:Manjur() {
   Manjur.__getter__() {
          cok=("cok.txt")
          if [[ -f cok.txt ]]; then
-             printf ""
+              printf ""
         else
-             exit
-        fi
+              exit
+         fi
+         command -v tput > /dev/null 2>&1 || { echo >&2 "it's not installed. apt-get install ncurses-utils"; exit ; }
          command -v tor > /dev/null 2>&1 || { echo >&2 "it's not installed. apt-get install tor"; exit ; }
          this kita
         echo -e "
