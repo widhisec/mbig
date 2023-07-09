@@ -9,7 +9,7 @@ import util/variable
 import util/type
 ############ Bash InfinitY ##################
 #https://github.com/niieani/bash-oo-framework"
-#############################gfeqkwfgfjv################
+#############################################
 trap ctrl_c INT
 
 ctrl_c() {
